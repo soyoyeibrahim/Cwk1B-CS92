@@ -1,0 +1,14 @@
+@startuml
+class wars.GameGUI
+class wars.GameUI
+class wars.SeaBattles
+class wars.Ships
+enum wars.EncounterType
+enum wars.ShipState
+interface wars.BATHS
+interface wars.Serializable
+wars.SeaBattles --|> wars.BATHS
+wars.EncounterType --|> wars.Serializable
+wars.ShipState --|> wars.Serializable
+wars.BATHS --|> wars.Serializable
+@enduml
